@@ -1,0 +1,2 @@
+ldap_delete: No such object (32)
+	matched DN: ou=Usuarios,ou=emge,dc=ejercito,dc=mil,dc=ar
