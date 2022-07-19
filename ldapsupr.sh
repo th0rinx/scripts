@@ -8,7 +8,7 @@ file="delete.txt"
 
 for c in $(cat $file); do
 
-ldapdelete -D "cn=admin,dc=ejercito,dc=mil,dc=ar" -wredise -h 10.120.16.120 -p 389 "cn=$c,ou=Usuarios,ou=emge,dc=ejercito,dc=mil,dc=ar"
+ldapdelete -D "cn=admin,dc=company,dc=company,dc=company" -w"contraseña" -h your_ip -p 389 "cn=$c,ou=Usuarios,ou=company,dc=company,dc=company,dc=company"
 
 done 2> logerror.txt
 
