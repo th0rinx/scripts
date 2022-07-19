@@ -9,7 +9,7 @@ file="dni.txt"
 for c in $(cat $file); do
 
 
-ldapsearch -z 0 -H ldap://Your_Ip:389 -wredise -D "cn=admin,dc=dominio,dc=dominio,dc=dominio" -b "ou=Usuarios,ou=lugar,dc=lugar,dc=lugar,dc=lugar" "(carlicense=$c*)" |grep mailbox | cut -d "/" -f1 | cut -d ' ' -f 2 
+ldapsearch -z 0 -H ldap://Your_Ip:389 -w"contraseña" -D "cn=admin,dc=dominio,dc=dominio,dc=dominio" -b "ou=Usuarios,ou=lugar,dc=lugar,dc=lugar,dc=lugar" "(carlicense=$c*)" |grep mailbox | cut -d "/" -f1 | cut -d ' ' -f 2 
 
 done >> usuarios.txt
 
